@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Photo Gallery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="./css/photoGallery.css" rel="stylesheet">
+    <script src="./js/photoGallery.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Photo Gallery</h1>
+    </header>
+    <!-- HTML to display the pictures -->
+    <div class="carousel">
+        <img src="img/dog01.jpeg" alt="" id="bigpic" />
+        <div class="thumbs">
+            <img src="./img/arrow_left.png" alt="Previous" onclick="calcslide(-1)" >
+            <img class="thumbpic" src="./img/dog01.jpeg" alt="" onclick="showbig(this.src)" />
+            <img class="thumbpic" src="./img/dog02.jpeg" alt="" onclick="showbig(this.src)" />
+            <img class="thumbpic" src="./img/dog03.jpeg" alt="" onclick="showbig(this.src)" />
+            <img class="thumbpic" src="./img/dog04.jpeg" alt="" onclick="showbig(this.src)" />
+            <img class="thumbpic" src="./img/dog05.jpeg" alt="" onclick="showbig(this.src)" />
+            <img class="thumbpic" src="./img/dog06.jpeg" alt="" onclick="showbig(this.src)" />
+            <img src="./img/arrow_right.png" alt="Next" onclick="calcslide(1)">
+        </div>
+        <!-- End thumbs -->
+    </div>
+    <!-- End carousel -->
+</body>
+
+</html>
